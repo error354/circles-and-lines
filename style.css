@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --startColor: #3256feff;
+  --midColor: #199287;
+  --endColor: #00cd0fff;
+  --midPoint: 50%;
+  --backgroundRotation: 150deg;
+}
+
+body {
+  background: linear-gradient(
+      var(--backgroundRotation),
+      var(--startColor) 0%,
+      var(--midColor) var(--midPoint),
+      var(--endColor) 100%
+    )
+    fixed;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
